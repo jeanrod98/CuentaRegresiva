@@ -1,38 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
 .App {
   text-align: center;
-}
+  width: 100%;
+  height: 100vh;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background: rgb(40,44,52);
+  background: linear-gradient(120deg, rgba(40,44,52,1) 35%, rgba(60,1,1,1) 99%);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.App-header h4{
+  color: #fff;
+  font-size: 32px;
+  margin: 0 0 30px 0;
+  font-family: "Montserrat", sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
+  display: flex;
+  width: 100%;
+  /* background: #f4f4; */
+  justify-content: center;
+  
+}
+.mensaje{
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* padding: 25px; */
+}
+.mensaje h1 {
+  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: bolder; */
+  background: -webkit-linear-gradient(#0e49be, #c90909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
-.App-link {
-  color: #61dafb;
+.mensaje span{
+  font-size: 92px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mensaje button{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  background: #c90909;
+  width: 30px;
+  height: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.dos-puntos{
+  color: #fff;
+  display: flex;  
+  align-items: center;
+  /* background: #f4fe; */
+  height: 100px;
+  
+}
+span{
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.dias,.horas,.minutos,.segundos{
+  /* display: flex; */
+  margin: 0px 20px 0px 20px;
+
+}
+
+
+.contenido-fecha{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+
+  
+}
+footer{
+  display: flex;
+  justify-content: center;
+  background: rgb(31, 31, 31);
+  padding: 8px;
+
+  /* background: linear-gradient(120deg, rgba(40,44,52,1) 25%, rgba(60,1,1,1) 9%); */
+}
+
+footer p {
+  color: #fff;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 0;
+  font-style: italic;
+
+}
+#desarrollador{
+  color: #fff;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: initial;
+}
+
+@media (max-width: 625px) {
+  .App-header h4{
+    
+    font-size: 26px;
+    margin: 0 0 30px 0;
+  
+  
   }
-  to {
-    transform: rotate(360deg);
+  .contenido-fecha{
+    width: 50px;
+    height: 50px;
+  font-size: 24px;
+
   }
+  .dos-puntos{
+   
+    height: 50px;
+    
+  }
+  .dias, .horas, .minutos, .segundos{
+    /* display: flex; */
+    margin: 0px 5px 0px 5px;
+  
+  }
+  span{
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .mensaje{
+    /* background: #0e49be; */
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 25px; */
+  }
+  .mensaje h1 {
+    font-size: 26px;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  }
+  
+  .mensaje span{
+    font-size: 36px;
+  }
+
+  footer{   
+    padding: 8px;
+  
+    /* background: linear-gradient(120deg, rgba(40,44,52,1) 25%, rgba(60,1,1,1) 9%); */
+  }
+  
+  footer p {
+   text-align: center;
+    font-size: 10px;
+    
+  
+  }
+  #desarrollador{
+
+    font-size: 10px;
+   
+  }
+  
 }
