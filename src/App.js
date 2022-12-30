@@ -7,7 +7,7 @@ import Confetti from "react-confetti"
 
 function App() {
   const [tiempo, setTiempo] = useState({});
-  const [mostrarMensaje, setMostrarMensaje] = useState(true);
+  const [mostrarMensaje, setMostrarMensaje] = useState(false);
   // const [year, setMostrarMensaje] = useState(false);
   let year = new Date().getFullYear()
 
