@@ -50,7 +50,9 @@ function App() {
   };
 
   useEffect(() => {
-    countDown("Jan 01 2023 00:00:00 GMT-0500");
+    const anioNuevo = new Date().getFullYear() + 1;
+    // console.log(anioNuevo);
+    countDown(`Jan 01 ${anioNuevo} 00:00:00 GMT-0500`);
     // countDown("Dec 28 2022 00:00:00 GMT-0500");
   }, []);
 
@@ -60,7 +62,7 @@ function App() {
     <div className="App">
       {mostrarMensaje && <Confetti style={{ magin: 0, padding: 0, width: "99%", height: "100vh"}}/>}
       <header className="App-header">
-        <h4>NEW YEAR 2023</h4>
+        <h4>{`NEW YEAR ${new Date().getFullYear() + 1}`}</h4>
       </header>
       <main>
         <div className="dias">
