@@ -93,7 +93,7 @@ function App() {
           <button onClick={() => setMostrarMensaje(false)}>
             X
           </button>
-          <h1>¡Happy New Year 2023!</h1>
+          <h1>{`¡Happy New Year ${new Date().getFullYear() + 1}!`}</h1>
           <span>&#127882;</span>
         </div>
       }
